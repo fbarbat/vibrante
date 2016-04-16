@@ -1,14 +1,18 @@
 {
-  "name": "mariafreire.vibrante",
+  "name": "vibrante",
   "version": "1.0.0",
   "license": "ISC",
   "private": true,
   "dependencies": {
-    "angular2": "^2.0.0-beta.15",
+    "angular2": "2.0.0-beta.15",
     "bootstrap": "4.0.0-alpha.2",
-    "es6-shim": "^0.35.0",
+    "es6-shim": "0.35.0",
+    "express": "4.13.4",
     "reflect-metadata": "0.1.2",
     "rxjs": "5.0.0-beta.2",
     "zone.js": "0.6.10"
+  },
+  "scripts": {
+    "start": "node server.js"
   }
 }
