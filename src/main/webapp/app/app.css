@@ -1,0 +1,50 @@
+@media (min-width: 768px) {
+    .container-fluid {
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3.5rem;
+    }
+
+    .content {
+        position: absolute;
+        top: 4rem;
+        bottom: 3.5rem;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 3.5rem;
+    }
+}
+
+nav {
+    margin-bottom: 1.5rem;
+}
+
+.git-hub-ribbon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    z-index: 100
+}
+
+footer {
+    text-align: center;
+    font-size: x-small;
+}
+

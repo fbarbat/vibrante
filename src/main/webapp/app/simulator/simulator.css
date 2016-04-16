@@ -1,0 +1,49 @@
+@media (min-width: 768px) {
+    .row {
+        height: 100%;
+    }
+
+    .col {
+        height: 100%;
+    }
+
+    .canvas-container {
+        height: 100%;
+    }
+
+    .controls-container {
+        height: 100%;
+        position: relative;
+    }
+}
+
+@media (max-width: 767px) {
+    .canvas-container {
+        height: 400px;
+    }
+}
+
+.canvas-container {
+    background-color: #f3f3f3;
+    position: relative;
+}
+
+canvas {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+    background-color: black;
+}
+
+.controls-container {
+    padding: 1.5rem;
+    border: .2rem solid #f7f7f9;
+}
+

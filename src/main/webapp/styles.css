@@ -1,0 +1,10 @@
+@media (min-width: 768px) {
+    html, body {
+        height: 100%;
+    }
+}
+
+input[type=color] {
+    height: 2.5rem;
+}
+

@@ -1,0 +1,69 @@
+<form>
+    <div class="controls-sm-down hidden-md-up">
+        <button type="submit" class="btn btn-primary btn-lg generate" (click)="generate()">Generar</button>
+        <button type="button" class="btn btn-default reset" (click)="reset()">Reiniciar</button>
+    </div>
+    <div class="inputs">
+        <tonalities [(value)]="specification.colors.tonalities"></tonalities>
+        <fieldset class="form-group">
+            <label>Fondo</label>
+            <input type="color" class="form-control" [(ngModel)]="specification.colors.background" required>
+        </fieldset>
+        <fieldset class="form-group">
+            <label>Filas - Mínimo</label>
+            <input type="number" class="form-control" [(ngModel)]="specification.rows.min" required>
+        </fieldset>
+        <fieldset class="form-group">
+            <label>Filas - Máximo</label>
+            <input type="number" class="form-control" [(ngModel)]="specification.rows.max" required>
+        </fieldset>
+        <fieldset class="form-group">
+            <label>Filas - Desviación máxima (%)</label>
+            <input type="number" class="form-control" [(ngModel)]="specification.rows.maxDeviation"
+                   step="any" required>
+        </fieldset>
+        <fieldset class="form-group">
+            <label>Filas - Separación (%)</label>
+            <input type="number" class="form-control" [(ngModel)]="specification.rows.separation"
+                   step="any" required>
+        </fieldset>
+        <fieldset class="form-group">
+            <label>Celdas - Mínimo</label>
+            <input type="number" class="form-control" [(ngModel)]="specification.cells.min" required>
+        </fieldset>
+        <fieldset class="form-group">
+            <label>Celdas - Máximo</label>
+            <input type="number" class="form-control" [(ngModel)]="specification.cells.max" required>
+        </fieldset>
+        <fieldset class="form-group">
+            <label>Celdas - Separación (%)</label>
+            <input type="number" class="form-control" [(ngModel)]="specification.cells.separation"
+                   step="any" required>
+        </fieldset>
+        <fieldset class="form-group">
+            <label>Bloques - Mínimo</label>
+            <input type="number" class="form-control" [(ngModel)]="specification.blocks.min" required>
+        </fieldset>
+        <fieldset class="form-group">
+            <label>Bloques - Máximo</label>
+            <input type="number" class="form-control" [(ngModel)]="specification.blocks.max" required>
+        </fieldset>
+        <fieldset class="form-group">
+            <label>Ancho (px)</label>
+            <input type="number" class="form-control" [(ngModel)]="specification.sizes.width" required>
+        </fieldset>
+        <fieldset class="form-group">
+            <label>Alto (px)</label>
+            <input type="number" class="form-control" [(ngModel)]="specification.sizes.height" required>
+        </fieldset>
+        <fieldset class="form-group">
+            <label>Margen (px)</label>
+            <input type="number" class="form-control" [(ngModel)]="specification.sizes.margin" required>
+        </fieldset>
+    </div>
+    <div class="controls hidden-sm-down">
+        <button type="submit" class="btn btn-primary generate" (click)="generate()">Generar</button>
+        <button type="button" class="btn btn-default reset" (click)="reset()">Reiniciar</button>
+    </div>
+</form>
+
