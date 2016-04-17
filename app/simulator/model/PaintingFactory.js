@@ -91,8 +91,8 @@
     function generateBlock(cellCount, lastBlock, specification) {
         var tonality = specification.colors.tonalities[random(0, specification.colors.tonalities.length - 1)];
         var leftToRight;
-        if (lastBlock !== null && tonality !== lastBlock.tonality) {
-            leftToRight = lastBlock.leftToRight;
+        if (lastBlock !== null && !lastBlock.leftToRight && tonality !== lastBlock.tonality) {
+            leftToRight = false;
         } else {
             leftToRight = !!random(0, 1);
         }
