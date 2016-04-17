@@ -5,11 +5,13 @@
                 selector: 'app',
                 templateUrl: 'app/app.html',
                 styleUrls: ['app/app.css'],
-                directives: [ng.router.ROUTER_DIRECTIVES]
+                directives: [ng.router.ROUTER_DIRECTIVES],
+                providers: [app.GoogleAnalytics]
             })
             .Class({
-                constructor: function () {
-                }
+                constructor: [app.GoogleAnalytics, function (googleAnalytics) {
+                    googleAnalytics.init();
+                }]
             });
 
     app.AppComponent = ng.router.RouteConfig([
