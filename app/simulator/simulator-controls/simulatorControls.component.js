@@ -3,12 +3,11 @@
 
     app.SimulatorControlsComponent =
         ng.core.Component({
-                selector: 'simulator-controls',
-                templateUrl: 'app/simulator/simulator-controls/simulator-controls.html',
-                styleUrls: ['app/simulator/simulator-controls/simulator-controls.css'],
-                directives: [app.TonalitiesComponent],
-                outputs: ['paintingRequested']
-            })
+            selector: 'simulator-controls',
+            templateUrl: 'app/simulator/simulator-controls/simulator-controls.html',
+            styleUrls: ['app/simulator/simulator-controls/simulator-controls.css'],
+            outputs: ['paintingRequested']
+        })
             .Class({
                 constructor: function () {
                     this.paintingRequested = new ng.core.EventEmitter();
@@ -29,25 +28,24 @@
                             min: 5,
                             max: 10,
                             maxDeviation: .5,
-                            separation: .5
+                            separation: 1
                         },
                         cells: {
                             min: 40,
                             max: 60,
-                            separation: .1
+                            separation: .2
                         },
                         blocks: {
                             min: 3,
                             max: 5
                         },
                         sizes: {
-                            width: 800,
-                            height: 600,
+                            width: 1600,
+                            height: 1200,
                             margin: 20
                         }
                     }
                 }
-
 
             });
 })(window.app || (window.app = {}));

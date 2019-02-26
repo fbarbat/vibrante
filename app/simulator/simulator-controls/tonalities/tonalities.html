@@ -1,4 +1,0 @@
-<fieldset *ngFor="#t of value; #i = index" class="form-group">
-    <label>Tonalidad {{i + 1}}</label>
-    <input type="color" class="form-control" [ngModel]="t" (ngModelChange)="setTonality(i, $event)" >
-</fieldset>

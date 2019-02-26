@@ -4,7 +4,14 @@
         <button type="button" class="btn btn-default reset" (click)="reset()">Reiniciar</button>
     </div>
     <div class="inputs">
-        <tonalities [(value)]="specification.colors.tonalities"></tonalities>
+        <fieldset class="form-group">
+            <label>Tonalidad 1</label>
+            <input type="color" class="form-control" [(ngModel)]="specification.colors.tonalities[0]">
+        </fieldset>
+        <fieldset class="form-group">
+            <label>Tonalidad 2</label>
+            <input type="color" class="form-control" [(ngModel)]="specification.colors.tonalities[1]">
+        </fieldset>
         <fieldset class="form-group">
             <label>Fondo</label>
             <input type="color" class="form-control" [(ngModel)]="specification.colors.background" required>
